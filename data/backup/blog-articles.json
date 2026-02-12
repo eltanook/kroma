@@ -1,0 +1,74 @@
+{
+    "featuredArticle": {
+        "title": "BPA y Disruptores Hormonales: La Amenaza Invisible en tu Cocina",
+        "excerpt": "El Bisfenol A (BPA) es un químico presente en casi todos los plásticos de uso cotidiano. Estudios recientes demuestran su impacto directo en tu sistema endocrino, fertilidad y salud metabólica.",
+        "image": "/images/article-hormones.jpg",
+        "tag": "SALUD",
+        "category": "salud",
+        "date": "8 Feb 2026",
+        "readTime": "12 min",
+        "slug": "bpa-disruptores-hormonales"
+    },
+    "articles": [
+        {
+            "title": "Acero 304 vs Plastico: Por Que el Material Importa",
+            "excerpt": "Una comparativa profunda sobre materiales de cocina y su impacto en la salud.",
+            "image": "/images/article-materials.jpg",
+            "tag": "MATERIALES",
+            "category": "ciencia",
+            "date": "5 Feb 2026",
+            "readTime": "8 min",
+            "slug": "acero-vs-plastico"
+        },
+        {
+            "title": "Microplasticos en Sangre: El Estudio que Cambio Todo",
+            "excerpt": "Investigación holandesa encuentra microplásticos en el 77% de muestras de sangre humana.",
+            "image": "/images/product-board.jpg",
+            "tag": "CIENCIA",
+            "category": "ciencia",
+            "date": "2 Feb 2026",
+            "readTime": "10 min",
+            "slug": "microplasticos-sangre"
+        },
+        {
+            "title": "Testosterona en Caida: El Enlace con Plásticos",
+            "excerpt": "Los niveles de testosterona han caído 50% en 40 años. El plástico podría ser responsable.",
+            "image": "/images/product-bottle.jpg",
+            "tag": "SALUD",
+            "category": "salud",
+            "date": "30 Ene 2026",
+            "readTime": "9 min",
+            "slug": "testosterona-plasticos"
+        },
+        {
+            "title": "Como Limpiar Tu Cocina de Toxicos en 7 Dias",
+            "excerpt": "Guía práctica para eliminar plásticos y materiales tóxicos de tu hogar.",
+            "image": "/images/article-kitchen.jpg",
+            "tag": "GUIAS",
+            "category": "sostenibilidad",
+            "date": "27 Ene 2026",
+            "readTime": "15 min",
+            "slug": "cocina-sin-toxicos"
+        },
+        {
+            "title": "Vidrio Borosilicato vs Vidrio Comun: Diferencias Clave",
+            "excerpt": "No todos los vidrios son iguales. Descubre por qué el borosilicato es superior.",
+            "image": "/images/product-container.jpg",
+            "tag": "MATERIALES",
+            "category": "ciencia",
+            "date": "24 Ene 2026",
+            "readTime": "6 min",
+            "slug": "vidrio-borosilicato"
+        },
+        {
+            "title": "Fertilidad Femenina y Plasticos: La Conexion Oculta",
+            "excerpt": "Cómo los disruptores endocrinos afectan la fertilidad femenina y qué puedes hacer al respecto.",
+            "image": "/images/product-cutlery.jpg",
+            "tag": "SALUD",
+            "category": "salud",
+            "date": "21 Ene 2026",
+            "readTime": "11 min",
+            "slug": "fertilidad-plasticos"
+        }
+    ]
+}

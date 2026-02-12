@@ -1,0 +1,148 @@
+{
+    "products": [
+        {
+            "name": "Steel Bottle 750ml",
+            "price": 32,
+            "image": "/images/product-bottle.jpg",
+            "category": "botellas",
+            "badge": "BESTSELLER",
+            "slug": "steel-bottle-750ml",
+            "description": "Botella térmica de acero inoxidable 304 con doble pared. Mantiene bebidas frías 24h y calientes 12h.",
+            "features": [
+                "Acero inoxidable 304 médico",
+                "Libre de BPA y ftalatos",
+                "Doble pared con vacío",
+                "Capacidad 750ml",
+                "Tapa hermética"
+            ],
+            "inStock": true,
+            "featured": true
+        },
+        {
+            "name": "Glass Container Set",
+            "price": 45,
+            "image": "/images/product-container.jpg",
+            "category": "contenedores",
+            "badge": "NUEVO",
+            "slug": "glass-container-set",
+            "description": "Set de contenedores de vidrio borosilicato con tapas de acero inoxidable. Perfecto para almacenamiento seguro.",
+            "features": [
+                "Vidrio borosilicato resistente",
+                "Tapas acero inoxidable",
+                "Apto microondas y lavavajillas",
+                "Sin plástico",
+                "Set de 3 piezas"
+            ],
+            "inStock": true,
+            "featured": true
+        },
+        {
+            "name": "Bamboo Cutting Board",
+            "price": 28,
+            "image": "/images/product-board.jpg",
+            "category": "utensilios",
+            "badge": "ECO",
+            "slug": "bamboo-cutting-board",
+            "description": "Tabla de cortar de bambú orgánico con propiedades antibacterianas naturales.",
+            "features": [
+                "Bambú orgánico certificado",
+                "Antibacteriano natural",
+                "Resistente y duradero",
+                "No absorbe olores",
+                "30cm x 45cm"
+            ],
+            "inStock": true,
+            "featured": false
+        },
+        {
+            "name": "Stainless Cutlery Set",
+            "price": 38,
+            "image": "/images/product-cutlery.jpg",
+            "category": "utensilios",
+            "badge": "PREMIUM",
+            "slug": "stainless-cutlery-set",
+            "description": "Set de cubiertos portátiles de acero inoxidable 304 con estuche de tela.",
+            "features": [
+                "Acero inoxidable 304",
+                "Incluye cuchara, tenedor, cuchillo",
+                "Estuche de lona",
+                "Ultra liviano",
+                "Ideal para viaje"
+            ],
+            "inStock": true,
+            "featured": false
+        },
+        {
+            "name": "Bamboo Utensils Set",
+            "price": 24,
+            "image": "/placeholder.svg",
+            "category": "utensilios",
+            "badge": "ECO",
+            "slug": "bamboo-utensils-set",
+            "description": "Set de utensilios de cocina de bambú para cocinar sin químicos.",
+            "features": [
+                "100% bambú natural",
+                "Set de 5 piezas",
+                "Resistente al calor",
+                "No raña superficie antiadherente",
+                "Biodegradable"
+            ],
+            "inStock": true,
+            "featured": false
+        },
+        {
+            "name": "Steel Lunch Box",
+            "price": 35,
+            "image": "/placeholder.svg",
+            "category": "contenedores",
+            "badge": "NUEVO",
+            "slug": "steel-lunch-box",
+            "description": "Lunch box de acero inoxidable con compartimentos separados.",
+            "features": [
+                "Acero inoxidable 304",
+                "2 compartimentos",
+                "Tapa hermética",
+                "Apto lavavajillas",
+                "Capacidad 1.2L"
+            ],
+            "inStock": true,
+            "featured": false
+        },
+        {
+            "name": "Silicone Storage Bags",
+            "price": 29,
+            "image": "/placeholder.svg",
+            "category": "accesorios",
+            "badge": "BESTSELLER",
+            "slug": "silicone-storage-bags",
+            "description": "Bolsas de silicona reutilizables para almacenamiento de alimentos.",
+            "features": [
+                "Silicona platino food-grade",
+                "Set de 4 tamaños",
+                "Reutilizables",
+                "Resistentes a -40°C hasta 230°C",
+                "Libres de BPA"
+            ],
+            "inStock": true,
+            "featured": false
+        },
+        {
+            "name": "Glass Water Pitcher",
+            "price": 42,
+            "image": "/placeholder.svg",
+            "category": "botellas",
+            "badge": "PREMIUM",
+            "slug": "glass-water-pitcher",
+            "description": "Jarra de agua de vidrio borosilicato con tapa de bambú.",
+            "features": [
+                "Vidrio borosilicato",
+                "Tapa de bambú natural",
+                "Capacidad 1.5L",
+                "Resistente a cambios térmicos",
+                "Diseño minimalista"
+            ],
+            "inStock": true,
+            "featured": false
+        }
+    ]
+}
