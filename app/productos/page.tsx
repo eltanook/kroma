@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/kroma/navbar"
 import { Footer } from "@/components/kroma/footer"
 import { CustomCursor } from "@/components/kroma/custom-cursor"
+import { WhatsAppButton } from "@/components/kroma/whatsapp-button"
 import { client } from "@/lib/sanity/client"
 import { productsQuery } from "@/lib/sanity/queries"
 import { ProductsClient } from "@/components/kroma/products-client"
@@ -29,6 +30,7 @@ export default async function ProductosPage() {
     return (
         <main>
             <CustomCursor />
+            <WhatsAppButton />
             <Navbar />
             <ProductsClient products={transformedProducts} />
             <Footer />

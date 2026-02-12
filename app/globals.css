@@ -100,6 +100,19 @@
 
 .chrome-text {
   background: linear-gradient(135deg,
+      #3f3f46 0%,
+      #71717a 40%,
+      #52525b 60%,
+      #71717a 80%,
+      #3f3f46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Chrome text for dark mode - lighter */
+.dark .chrome-text {
+  background: linear-gradient(135deg,
       #71717a 0%,
       #e4e4e7 40%,
       #a1a1aa 60%,
@@ -430,11 +443,15 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg,
-      #71717a 0%,
-      #a1a1aa 30%,
+      #3f3f46 0%,
+      #71717a 20%,
+      #a1a1aa 40%,
       #d4d4d8 50%,
+      #e4e4e7 55%,
+      #d4d4d8 60%,
       #a1a1aa 70%,
-      #71717a 100%);
+      #71717a 80%,
+      #52525b 100%);
   border-radius: 3px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -442,12 +459,17 @@
 ::-webkit-scrollbar-thumb:hover {
   width: 8px;
   background: linear-gradient(180deg,
-      #52525b 0%,
-      #a1a1aa 20%,
-      #d4d4d8 40%,
+      #27272a 0%,
+      #52525b 15%,
+      #71717a 25%,
+      #a1a1aa 40%,
+      #d4d4d8 47%,
       #e4e4e7 50%,
+      #f4f4f5 52%,
+      #e4e4e7 55%,
       #d4d4d8 60%,
-      #a1a1aa 80%,
+      #a1a1aa 75%,
+      #71717a 85%,
       #52525b 100%);
   box-shadow: 0 0 12px rgba(212, 212, 216, 0.5), 0 0 6px rgba(161, 161, 170, 0.3);
 }
@@ -458,10 +480,28 @@
   scrollbar-color: #a1a1aa transparent;
 }
 
-/* Chrome Text with Orange Accent - Scroll-driven */
+/* Chrome Text with Orange Accent - Light mode (dark chrome) */
 .chrome-text-orange {
   background: linear-gradient(135deg,
       #3f3f46 0%,
+      #71717a 25%,
+      #52525b 45%,
+      #71717a 55%,
+      #52525b 65%,
+      #71717a 85%,
+      #3f3f46 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineScroll linear;
+  animation-timeline: scroll();
+}
+
+/* Chrome Text with Orange Accent - Dark mode (light chrome) */
+.dark .chrome-text-orange {
+  background: linear-gradient(135deg,
+      #52525b 0%,
       #a1a1aa 25%,
       #d4d4d8 45%,
       #e4e4e7 55%,
@@ -475,6 +515,7 @@
   animation: shineScroll linear;
   animation-timeline: scroll();
 }
+
 
 /* Metal shine animation - Scroll-driven */
 @keyframes shineScroll {

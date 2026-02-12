@@ -112,6 +112,20 @@ export default async function ArticlePage({
                         Volver al blog
                     </Link>
 
+                    {/* Main Image - ARRIBA DE TODO */}
+                    {article.mainImage && (
+                        <div className="relative aspect-video mb-8 overflow-hidden rounded-2xl">
+                            <Image
+                                src={article.mainImage}
+                                alt={article.title}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 896px"
+                                priority
+                            />
+                        </div>
+                    )}
+
                     {/* Article Header */}
                     <header className="mb-8">
                         <div className="mb-4 flex items-center gap-4 text-sm text-muted-foreground">
@@ -145,29 +159,73 @@ export default async function ArticlePage({
                         )}
                     </header>
 
-                    {/* Main Image */}
-                    {article.mainImage && (
-                        <div className="relative aspect-video mb-12 overflow-hidden rounded-2xl glass-card">
-                            <Image
-                                src={article.mainImage}
-                                alt={article.title}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 1024px) 100vw, 896px"
-                                priority
-                            />
-                        </div>
-                    )}
 
                     {/* Article Content */}
                     <div className="prose prose-lg prose-invert max-w-none">
                         <PortableText
                             value={article.content}
                             components={{
+                                types: {
+                                    image: ({ value }: any) => {
+                                        if (!value?.asset) return null
+
+                                        const imageUrl = value.asset.url || value.asset._ref
+                                            ? `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${value.asset._ref?.replace('image-', '').replace('-jpg', '.jpg').replace('-png', '.png').replace('-webp', '.webp')}`
+                                            : null
+
+                                        if (!imageUrl) return null
+
+                                        return (
+                                            <div className="my-8">
+                                                <div className="relative w-full h-96 rounded-xl overflow-hidden">
+                                                    <Image
+                                                        src={imageUrl}
+                                                        alt={value.alt || 'Article image'}
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="(max-width: 768px) 100vw, 896px"
+                                                    />
+                                                </div>
+                                                {value.caption && (
+                                                    <p className="text-sm text-center text-muted-foreground mt-3 italic">
+                                                        {value.caption}
+                                                    </p>
+                                                )}
+                                            </div>
+                                        )
+                                    },
+                                },
                                 block: {
                                     normal: ({ children }) => <p className="text-muted-foreground leading-relaxed mb-6">{children}</p>,
                                     h2: ({ children }) => <h2 className="font-display text-3xl font-bold text-foreground mt-12 mb-6">{children}</h2>,
                                     h3: ({ children }) => <h3 className="font-display text-2xl font-semibold text-foreground mt-8 mb-4">{children}</h3>,
+                                    h4: ({ children }) => <h4 className="font-display text-xl font-semibold text-foreground mt-6 mb-3">{children}</h4>,
+                                    blockquote: ({ children }) => (
+                                        <blockquote className="border-l-4 border-orange-500 pl-6 my-6 italic text-muted-foreground">
+                                            {children}
+                                        </blockquote>
+                                    ),
+                                },
+                                list: {
+                                    bullet: ({ children }) => <ul className="list-disc list-inside space-y-2 text-muted-foreground my-6">{children}</ul>,
+                                    number: ({ children }) => <ol className="list-decimal list-inside space-y-2 text-muted-foreground my-6">{children}</ol>,
+                                },
+                                marks: {
+                                    strong: ({ children }) => <strong className="font-bold text-foreground">{children}</strong>,
+                                    em: ({ children }) => <em className="italic">{children}</em>,
+                                    link: ({ value, children }: any) => {
+                                        const target = (value?.href || '').startsWith('http') ? '_blank' : undefined
+                                        return (
+                                            <a
+                                                href={value?.href}
+                                                target={target}
+                                                rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+                                                className="text-orange-500 hover:underline"
+                                            >
+                                                {children}
+                                            </a>
+                                        )
+                                    },
                                 },
                             }}
                         />

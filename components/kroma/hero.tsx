@@ -15,96 +15,21 @@ export function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       aria-labelledby="hero-heading"
     >
-      {/* Animated Mesh Gradient Background */}
+      {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
-        {/* Base background */}
-        <div className="absolute inset-0 bg-background dark:bg-black" />
+        {/* Background Image - Fixed Attachment */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: 'url(/images/hero.jpg)',
+          }}
+        />
 
-        {/* Mesh gradient blobs - Light Mode */}
-        <div className="absolute inset-0 dark:hidden">
-          {/* Orange blob 1 */}
-          <div
-            className="mesh-blob-1 absolute top-[10%] left-[15%] h-[400px] w-[400px] rounded-full opacity-30"
-            style={{
-              background: 'radial-gradient(circle, #FF6B35 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Blue blob */}
-          <div
-            className="mesh-blob-2 absolute top-[60%] right-[20%] h-[350px] w-[350px] rounded-full opacity-25"
-            style={{
-              background: 'radial-gradient(circle, #4A90E2 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Orange blob 2 */}
-          <div
-            className="mesh-blob-3 absolute bottom-[15%] left-[40%] h-[350px] w-[350px] rounded-full opacity-25"
-            style={{
-              background: 'radial-gradient(circle, #F7931E 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Metallic gray blob */}
-          <div
-            className="mesh-blob-4 absolute top-[35%] right-[10%] h-[300px] w-[300px] rounded-full opacity-20"
-            style={{
-              background: 'radial-gradient(circle, #D4D4D8 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-        </div>
-
-        {/* Mesh gradient blobs - Dark Mode */}
-        <div className="absolute inset-0 hidden dark:block">
-          {/* Deep orange blob 1 */}
-          <div
-            className="mesh-blob-1 absolute top-[10%] left-[15%] h-[400px] w-[400px] rounded-full opacity-20"
-            style={{
-              background: 'radial-gradient(circle, #E85D04 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Purple blob */}
-          <div
-            className="mesh-blob-2 absolute top-[60%] right-[20%] h-[350px] w-[350px] rounded-full opacity-15"
-            style={{
-              background: 'radial-gradient(circle, #6A4C93 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Dark orange blob 2 */}
-          <div
-            className="mesh-blob-3 absolute bottom-[15%] left-[40%] h-[350px] w-[350px] rounded-full opacity-18"
-            style={{
-              background: 'radial-gradient(circle, #DC2F02 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-          {/* Dark purple blob */}
-          <div
-            className="mesh-blob-4 absolute top-[35%] right-[10%] h-[300px] w-[300px] rounded-full opacity-15"
-            style={{
-              background: 'radial-gradient(circle, #5A189A 0%, transparent 70%)',
-              filter: 'blur(60px)',
-              transform: 'translateZ(0)',
-            }}
-          />
-        </div>
+        {/* Gradient Overlay - starts from midpoint down */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-0% via-background/60 via-50% to-background to-100%" />
 
         {/* Noise texture overlay */}
-        <div className="noise-overlay absolute inset-0 opacity-[0.05]" />
-
-        {/* Gradient fade to smooth blend with content below */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="noise-overlay absolute inset-0 opacity-[0.03]" />
       </div>
 
       {/* Content */}

@@ -42,7 +42,7 @@ export function generateArticleSchema({
     author = SITE_NAME,
     category,
 }: ArticleSchemaProps) {
-    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`
+    const imageUrl = image && image.startsWith('http') ? image : `${SITE_URL}${image || '/images/og-default.jpg'}`
 
     return {
         '@context': 'https://schema.org',
@@ -92,7 +92,7 @@ export function generateProductSchema({
     inStock,
     category,
 }: ProductSchemaProps) {
-    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`
+    const imageUrl = image && image.startsWith('http') ? image : `${SITE_URL}${image || '/images/og-default.jpg'}`
 
     return {
         '@context': 'https://schema.org',

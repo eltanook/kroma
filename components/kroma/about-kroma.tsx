@@ -149,7 +149,7 @@ export function AboutKroma() {
                                 }
                             }}
                         >
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 w-12 rounded-full chrome-gradient shadow-[0_0_20px_rgba(212,212,216,0.4)] flex items-center justify-center pointer-events-none">
                                 <svg className="h-6 w-6 text-black rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
                                 </svg>

@@ -45,7 +45,8 @@ export function Footer() {
     >
       {/* Manifesto Section */}
       <div className="relative overflow-hidden py-16 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-b from-kroma-black to-kroma-carbon" aria-hidden="true" />
+        {/* Background gradient - adapts to theme */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/90 dark:from-zinc-900 dark:via-zinc-900 dark:to-black" aria-hidden="true" />
         <div className="noise-overlay absolute inset-0" aria-hidden="true" />
 
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 text-center">

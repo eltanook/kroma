@@ -6,6 +6,7 @@ import { AboutKroma } from "@/components/kroma/about-kroma"
 import { Footer } from "@/components/kroma/footer"
 import { CustomCursor } from "@/components/kroma/custom-cursor"
 import { Counter } from "@/components/kroma/counter"
+import { WhatsAppButton } from "@/components/kroma/whatsapp-button"
 import { client } from "@/lib/sanity/client"
 import { articlesQuery, featuredProductsQuery } from "@/lib/sanity/queries"
 import { homeMetadata } from "@/lib/seo/metadata"
@@ -37,6 +38,7 @@ export default async function Page() {
       />
 
       <CustomCursor />
+      <WhatsAppButton />
       <Navbar />
       <Hero />
 
