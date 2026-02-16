@@ -1,27 +1,6 @@
 {
     "buildCommand": "npm run build",
-    "devCommand": "npm run dev",
-    "installCommand": "npm install",
     "framework": "nextjs",
-    "outputDirectory": ".next",
-    "env": {
-        "NEXT_PUBLIC_SANITY_PROJECT_ID": {
-            "description": "Your Sanity Project ID (found in sanity.config.ts or at sanity.io/manage)",
-            "value": "82mx3a0n"
-        },
-        "NEXT_PUBLIC_SANITY_DATASET": {
-            "description": "Sanity dataset name (usually 'production')",
-            "value": "production"
-        },
-        "SANITY_API_TOKEN": {
-            "description": "Sanity API token with Editor permissions (create at sanity.io/manage > API > Tokens)",
-            "required": true
-        },
-        "NEXT_PUBLIC_SITE_URL": {
-            "description": "Your production site URL (e.g., https://kroma.com)",
-            "required": true
-        }
-    },
     "regions": [
         "gru1"
     ]
